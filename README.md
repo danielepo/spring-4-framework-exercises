@@ -36,6 +36,8 @@ public static void main( String[] args )
 
 Print to console the "Hello World" using the class LinePrinter and passing to the constructor the dependency to System.out
 
+**suggestion:** check-out `<util:constant/>`
+
 ```java
 class LinePrinter {
   private final PrintStream printer;
@@ -65,4 +67,4 @@ public static void main( String[] args )
 ```
 
 ### Exercise 3
-Modify Exercise 1 to print to a file
+Modify Exercise 2 to print to a file
