@@ -3,4 +3,4 @@
 
 A set of exercises created by myself (or found in the internet) to help me learn the spring framework
 
-[../ioc]
+[Inversion of Control](./IoC%20-%20Exercises.md)
