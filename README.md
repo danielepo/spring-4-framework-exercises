@@ -68,3 +68,32 @@ public static void main( String[] args )
 
 ### Exercise 3
 Modify Exercise 2 to print to a file
+
+### Exercise 4
+
+Now the class LinePrinter changes to expose only 2 factory methods that precofigure the PrintStream.
+
+
+```java
+class LinePrinter {
+
+  private final PrintStream printer;
+
+  public LinePrinter() {
+    printer = null;
+  }
+  private LinePrinter(PrintStream printer) {
+    this.printer = printer;
+  }
+  public LinePrinter createConsolePrinter(){
+    return new LinePrinter(System.out);
+  }
+  public LinePrinter createFilePrinter() throws FileNotFoundException{
+    return new LinePrinter(new PrintStream(new File("test.txt")));
+  }
+  void printMessage(String hello) {
+    printer.println(hello);
+  }
+
+}
+```
